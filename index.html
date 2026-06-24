@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Engineering & Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Portfolio.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-frame">
+                    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="typing-text"></span></h1>
+                <p class="hero-subtitle">Building clean, data-driven digital experiences through engineering and analytics.</p>
+                <div class="hero-cta">
+                    <a href="resume.pdf" download class="btn primary-btn">Download Resume</a>
+                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a second-year Electronics and Communication Engineering student passionate about bridging the gap between hardware fundamentals and software applications.</p>
+                    <h3>Career Goals</h3>
+                    <p>To design intelligent systems and data solutions that bridge the gap between complex hardware configurations and scalable algorithmic architectures.</p>
+                    <h3>Interests</h3>
+                    <p>Apart from machine learning, I enjoy exploring custom 2D game mechanics, game engine physics, and logic of interactive system design.</p>
+                </div>
+                <div class="education-card">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <h4>B.Tech in Electronics and Communication Engineering with Specialization in VLSI Design</h4>
+                        <p class="edu-meta">Expected Graduation: 2029</p> 
+                    </div>
+                    <div class="edu-item">
+                        <h4>High School Graduation</h4>
+                        <p class="edu-institution">Delhi Private School (DPS), Dubai</p>
+                        <p class="edu-meta">Graduated: 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="skills" class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Web</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Python</span><span>90%</span></div>
+                        <div class="progress-bar"><div class="progress" data-level="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>HTML & CSS</span><span>95%</span></div>
+                        <div class="progress-bar"><div class="progress" data-level="95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>C++</span><span>80%</span></div>
+                        <div class="progress-bar"><div class="progress" data-level="80%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Pandas & NumPy</span><span>85%</span></div>
+                        <div class="progress-bar"><div class="progress" data-level="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Machine Learning</span><span>85%</span></div>
+                        <div class="progress-bar"><div class="progress" data-level="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>TensorFlow & PyTorch</span><span>75%</span></div>
+                        <div class="progress-bar"><div class="progress" data-level="75%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="systems">Systems & Web</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="systems">
+                    <h3>Student Management System</h3>
+                    <p>A structured application built to streamline student records, enrollment processes, and database queries efficiently.</p>
+                </div>
+                <div class="project-card" data-category="ml">
+                    <h3>Student Performance Analyzer</h3>
+                    <p>An analytics engine utilizing predictive modeling to identify factors influencing student success and tracking metrics across cohorts.</p>
+                </div>
+                <div class="project-card" data-category="ml">
+                    <h3>Marks Prediction Model</h3>
+                    <p>A supervised machine learning regression pipeline engineered to accurately forecast final academic scores based on historical study metrics.</p>
+                </div>
+                <div class="project-card" data-category="ml">
+                    <h3>Handwritten Digit Recognition</h3>
+                    <p>A deep neural network trained using specialized convolutional layer topologies to identify and classify structural handwritten inputs.</p>
+                </div>
+                <div class="project-card" data-category="systems">
+                    <h3>Book Store Web Scraper</h3>
+                    <p>An optimized pipeline utilizing standard parsing libraries to extract structured catalog details, pricing structures, and inventory lists smoothly.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="certifications" class="certifications-section">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Introduction to Statistics</h3>
+                    <p>University of Amsterdam / Coursera</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Introduction to Machine Learning</h3>
+                    <p>Kaggle</p>
+                </div><div class="cert-card">
+                    <h3>Introduction to Deep Learning</h3>
+                    <p>Kaggle</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><strong>Email:</strong> vidhijha2021@gmail.com </p>
+                    <p><strong>Phone:</strong> +971 56 4390 545</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/vidhi-jha-2a42a83a3" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/vj25ecb1a54-rgb" target="_blank">GitHub</a>
+                    </div>
+                    <div class="visitor-box">
+                        <p>Visitor Counter: <span id="counter">0</span></p>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                        <span class="error-msg" id="name-error">Name is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                        <span class="error-msg" id="email-error">Please provide a valid email format.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                        <span class="error-msg" id="message-error">Message area cannot be blank.</span>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026. Designed with minimal structure and utility.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
