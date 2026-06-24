@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const words = ["Vidhi.", "an Engineering Student.", ];
+    const words = ["Vidhi.", "an Engineering Student."];
     let wordIdx = 0;
     let charIdx = 0;
     let isDeleting = false;
